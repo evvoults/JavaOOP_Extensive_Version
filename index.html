@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>JavaOOP | Διαδραστικό εργαστήριο αντικειμενοστρεφούς Java</title>
+<meta name="description" content="Διαδραστικό πανεπιστημιακό εργαστήριο Java με 15 θεματικές ενότητες, οπτική μάθηση και κλιμακωτές ασκήσεις." />
+<link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+<div class="site-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="brand-icon">{ }</span><span>Java<span class="brand-oop">OOP</span><small>ΔΙΑΔΡΑΣΤΙΚΟ ΕΡΓΑΣΤΗΡΙΟ</small></span></div>
+    <div class="side-heading">ΠΡΟΓΡΑΜΜΑ ΣΠΟΥΔΩΝ <span>15 ενότητες</span></div>
+    <div id="moduleList" class="module-list"></div>
+    <div class="sidebar-note">Οι δραστηριότητες λειτουργούν στον browser. Η πρόοδος διατηρείται όσο η σελίδα είναι ανοιχτή. Με νέο άνοιγμα ξεκινάς από την αρχή.</div>
+  </aside>
+  <div class="workarea">
+    <header class="topbar">
+      <button id="mobileMenu" class="icon-btn mobile-menu" type="button" aria-label="Άνοιγμα μενού">☰</button>
+      <div class="crumbs">JavaOOP <span>›</span> <strong id="crumbModule">Ενότητα 1</strong> <span>›</span> <span id="crumbStep">Βήμα 1</span></div>
+      <div class="top-right"><span class="saved-label">● Προσωρινή πρόοδος · μηδενίζεται στο νέο άνοιγμα</span><button id="resetBtn" type="button" class="outline-btn">Νέα αρχή</button></div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero-copy"><div class="eyebrow" id="heroModule">ΕΝΟΤΗΤΑ 01 / 15</div><h1 id="heroTitle"></h1><p id="heroDescription"></p><div class="hero-tags"><span>16 μαθησιακά βήματα</span><span>5 επίπεδα ανά βήμα</span><span>Οπτική εξερεύνηση</span></div></div>
+        <div class="hero-decoration"><span class="deco-bracket">{</span><span class="deco-class" id="heroClass">class Book</span><span class="deco-bracket">}</span></div>
+      </section>
+      <section class="course-progress" aria-label="Πρόοδος ενότητας"><div><strong id="progressTitle">Πρόοδος ενότητας</strong><span id="progressDetail"></span></div><div class="progress-bar"><div id="progressFill"></div></div><strong id="progressPercent">0%</strong></section>
+      <section class="step-section">
+        <div class="section-head"><div><div class="micro-title">ΔΙΑΔΡΟΜΗ ΜΑΘΗΣΗΣ</div><h2>Τα 16 βήματα</h2></div><span class="section-hint">Επίλεξε βήμα για εξερεύνηση</span></div>
+        <div class="steps" id="stepList"></div>
+      </section>
+      <section class="challenge-heading"><div><div class="micro-title" id="currentStage">ΒΗΜΑ 01 · ΑΝΑΓΝΩΡΙΣΗ</div><h2 id="exerciseName"></h2><p id="exerciseGoal"></p></div><div class="level-select"><span>Επίπεδο δυσκολίας</span><div id="levelButtons" class="level-buttons"></div></div></section>
+      <section class="columns"><article class="exercise panel"><div class="panel-top"><span class="tag blue" id="exerciseKind">Δραστηριότητα</span><span id="exerciseNo" class="exercise-number">01/80</span></div><div id="exerciseContent" aria-live="polite"></div><div id="feedback" class="feedback" role="status" aria-live="polite"></div><div class="exercise-actions"><button id="hintBtn" type="button" class="outline-btn">💡 Υπόδειξη</button><button id="checkBtn" type="button" class="primary-btn">Έλεγχος απάντησης →</button></div><p class="editor-note" id="editorNote"></p></article>
+      <aside class="visual-column"><div class="panel visual-panel"><div class="panel-top"><span class="tag purple">ΟΠΤΙΚΟ ΕΡΓΑΣΤΗΡΙΟ</span><span class="subtle" id="visualLabel"></span></div><h3 id="visualTitle">Από την εικόνα στον κώδικα</h3><p id="visualHelp"></p><div id="visualContent"></div></div><div class="concept-note"><div class="micro-title">ΤΙ ΚΡΑΤΑΜΕ</div><p id="conceptNote"></p></div></aside></section>
+      <nav class="footer-nav" aria-label="Μετακίνηση ασκήσεων"><button id="prevBtn" type="button" class="outline-btn">← Προηγούμενη δραστηριότητα</button><span id="footerCurrent"></span><button id="nextBtn" type="button" class="primary-btn">Επόμενη δραστηριότητα →</button></nav>
+      <footer>JavaOOP · Εργαστήριο Αντικειμενοστρεφούς Προγραμματισμού · Οι έλεγχοι συγγραφής κώδικα είναι ενδεικτικοί, όχι μεταγλωττιστής Java.</footer>
+    </main>
+  </div>
+</div>
+<script src="images.js?v=2"></script><script src="data.js?v=2"></script><script src="app.js?v=2"></script>
+</body></html>
